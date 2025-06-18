@@ -1,0 +1,108 @@
+%%%%%%%%%%%%%%%%%
+% This is a modified CV template based on altacv.cls
+% emphasizing 5 years of experience in full-stack development and AI.
+%%%%%%%%%%%%%%%%
+
+\PassOptionsToPackage{dvipsnames}{xcolor}
+
+\documentclass[10pt,a4paper]{altacv}
+
+\geometry{left=1cm,right=9cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1.25cm,bottom=1.25cm,footskip=2\baselineskip}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[default]{lato}
+\usepackage{CJKutf8}
+
+\definecolor{Mulberry}{HTML}{72243D}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{heading}{Sepia}
+\colorlet{accent}{Mulberry}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+\addbibresource{sample.bib}
+\usepackage[colorlinks]{hyperref}
+
+\begin{document}
+\begin{CJK*}{UTF8}{bsmi}
+
+\name{Chia Xin Liang}
+\photo{4cm}{asd}
+\personalinfo{%
+  \email{cxldun@gmail.com}
+  \phone{+886909973037}
+  \location{高雄市左營區博愛二路204號8樓之3}
+  \github{github.com/ChiaXinLiang}
+  \birthday{1995/12/09 (YY/MM/DD)}
+  \printinfo{Nationality}{Malaysia}
+}
+
+\begin{fullwidth}
+\makecvheader
+\end{fullwidth}
+
+\cvsection[page1sidebar]{Self Introduction}
+I am a highly motivated software engineer with over 5 years of hands-on experience in full-stack development and artificial intelligence. My background combines robust mathematical foundations with practical skills in designing scalable web architectures, RESTful APIs, cloud infrastructure, and AI-driven applications in computer vision, natural language processing, and voice interfaces. I thrive in dynamic environments where I can lead cross-functional teams to deliver innovative and efficient solutions.
+
+\cvsection{Experience}
+
+\cvevent{Full-Stack \& AI Solutions Director}{JTB Technology Corp.}{June 2020 -- now}{Taiwan}
+\begin{itemize}
+\item Led end-to-end development of full-stack applications, from designing user interfaces to building scalable back-end systems.
+\item Architected and deployed AI algorithms for computer vision, semantic scene understanding, and natural language processing.
+\item Integrated cloud infrastructure and CI/CD pipelines (using technologies such as AWS/Azure and Kubeflow) to streamline deployment and scalability.
+\item Coordinated cross-functional teams to deliver innovative products that combine robust full-stack frameworks with cutting-edge AI capabilities.
+\end{itemize}
+
+\divider
+
+\cvevent{Part-time AI \& Full-Stack Instructor}{FengChia University}{September 2023 -- September 2024}{Taiwan}
+\begin{itemize}
+\item Teach courses on full-stack development and AI integration, covering both front-end frameworks and advanced algorithm design.
+\end{itemize}
+
+\divider
+
+\cvevent{Research Assistant \& Developer}{National Chung Hsing University}{March 2017 -- August 2019}{Taiwan}
+\begin{itemize}
+\item Developed and tested machine learning models and full-stack prototypes for image processing and data visualization.
+\item Collaborated on projects that blended mathematical optimization techniques with practical software implementations.
+\end{itemize}
+
+\cvsection{Projects}
+
+\cvevent{Industrial Full-Stack AI Platform for Safety}{JTB Technology Corp.}{2022 -- now}{}
+\begin{itemize}
+\item Developed a full-stack platform integrating AI-driven object detection and segmentation with user-friendly dashboards.
+\item Implemented end-to-end solutions from front-end interfaces to back-end APIs, enabling real-time safety monitoring and incident reporting.
+\end{itemize}
+
+\divider
+
+\cvevent{Voice Agent and Chatbot}{MarcusLab}{2023 -- now}{}
+\begin{itemize}
+This project is an integrated voice and chatbot platform. The backend is built with Flask and SocketIO for real-time communication. It processes voice commands using tools like VAPI, Retell, and LiveKit, and enables chat functionality via SocketIO and WebRTC. Data is managed through NocoDB and other databases, while the solution supports embedding via iframes and integrates with messaging platforms like WhatsApp and Facebook Messenger. The entire system is deployed using Docker Compose.
+\end{itemize}
+
+\cvsection{Publication}
+% Traditional publication event
+\cvevent{Neural Network based Super-Resolution Algorithms for Direction-Of-Arrival Estimation}{National Chung Hsing University}{2019}{}
+
+% Additional arXiv publications (select examples)
+\cvevent{\href{https://arxiv.org/abs/2502.04116}{Generative Adversarial Networks Bridging Art and Machine Intelligence}}{arXiv}{Submitted: 9 February, 2025}{}
+\cvevent{\href{https://arxiv.org/abs/2412.09656}{From Noise to Nuance: Advances in Deep Generative Image Models}}{arXiv}{Submitted: 11 December, 2024}{}
+\cvevent{\href{https://arxiv.org/abs/2412.08969}{Deep Learning Model Security: Threats and Defenses}}{arXiv}{Submitted: 15 December, 2024}{}
+\cvevent{\href{https://arxiv.org/abs/2412.02187}{Deep Learning, Machine Learning, Advancing Big Data Analytics and Management}}{arXiv}{Submitted: 3 December, 2024}{}
+\cvevent{\href{https://arxiv.org/abs/2412.00800}{A Comprehensive Guide to Explainable AI: From Classical Models to LLMs}}{arXiv}{Submitted: 8 December, 2024}{}
+\cvevent{\href{https://arxiv.org/abs/2411.06284}{A Comprehensive Survey and Guide to Multimodal Large Language Models in Vision-Language Tasks}}{arXiv}{Submitted: 8 December, 2024}{}
+\cvevent{\href{https://arxiv.org/abs/2411.05026}{Deep Learning and Machine Learning -- Natural Language Processing: From Theory to Application}}{arXiv}{Submitted: 17 December, 2024}{}
+
+
+
+\end{CJK*}
+\end{document}
