@@ -1,0 +1,108 @@
+%%%%%%%%%%%%%%%%%
+% 這是基於 altacv.cls 的修改版 CV 模板
+% 強調在全棧開發和人工智能領域的 5 年經驗
+%%%%%%%%%%%%%%%%
+
+\PassOptionsToPackage{dvipsnames}{xcolor}
+
+\documentclass[10pt,a4paper]{altacv}
+
+\geometry{left=1cm,right=9cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1.25cm,bottom=1.25cm,footskip=2\baselineskip}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[default]{lato}
+\usepackage{CJKutf8}
+
+\definecolor{Mulberry}{HTML}{72243D}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{heading}{Sepia}
+\colorlet{accent}{Mulberry}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+\addbibresource{sample.bib}
+\usepackage[colorlinks]{hyperref}
+
+\begin{document}
+\begin{CJK*}{UTF8}{bsmi}
+
+\name{謝欣良}
+\photo{4cm}{asd}
+\personalinfo{%
+  \email{cxldun@gmail.com}
+  \phone{+886909973037}
+  \location{高雄市左營區博愛二路204號8樓之3}
+  \github{github.com/ChiaXinLiang}
+  \birthday{1995/12/09 (年/月/日)}
+  \printinfo{國籍}{馬來西亞}
+}
+
+\begin{fullwidth}
+\makecvheader
+\end{fullwidth}
+
+\cvsection[page1sidebar_chinese]{自我介紹}
+我是一位充滿熱情的軟體工程師，擁有超過 5 年的全棧開發和人工智能實踐經驗。我的背景結合了扎實的數學基礎與實務技能，專精於設計可擴展的網頁架構、RESTful API、雲端基礎設施，以及在計算機視覺、自然語言處理和語音介面等領域的 AI 驅動應用程式。我擅長在充滿活力的環境中工作，能夠領導跨職能團隊提供創新且高效的解決方案。
+
+\cvsection{工作經歷}
+
+\cvevent{全棧與 AI 解決方案總監}{JTB 科技股份有限公司}{2020 年 6 月 -- 至今}{台灣}
+\begin{itemize}
+\item 領導全棧應用程式的端到端開發，從設計使用者介面到構建可擴展的後端系統。
+\item 架構並部署用於計算機視覺、語義場景理解和自然語言處理的 AI 演算法。
+\item 整合雲端基礎設施和 CI/CD 管道（使用 AWS/Azure 和 Kubeflow 等技術）以簡化部署和擴展性。
+\item 協調跨職能團隊，提供結合強大全棧框架與尖端 AI 功能的創新產品。
+\end{itemize}
+
+\divider
+
+\cvevent{兼任 AI 與全棧講師}{逢甲大學}{2023 年 9 月 -- 2024 年 9 月}{台灣}
+\begin{itemize}
+\item 教授全棧開發和 AI 整合課程，涵蓋前端框架和進階演算法設計。
+\end{itemize}
+
+\divider
+
+\cvevent{研究助理與開發人員}{國立中興大學}{2017 年 3 月 -- 2019 年 8 月}{台灣}
+\begin{itemize}
+\item 開發和測試機器學習模型以及用於影像處理和數據視覺化的全棧原型。
+\item 合作進行結合數學優化技術與實際軟體實作的專案。
+\end{itemize}
+
+\cvsection{專案}
+
+\cvevent{工業安全全棧 AI 平台}{JTB 科技股份有限公司}{2022 年 -- 至今}{}
+\begin{itemize}
+\item 開發了一個整合 AI 驅動物體檢測和分割與用戶友好儀表板的全棧平台。
+\item 實施從前端介面到後端 API 的端到端解決方案，實現即時安全監控和事件報告。
+\end{itemize}
+
+\divider
+
+\cvevent{語音代理和聊天機器人}{MarcusLab}{2023 年 -- 至今}{}
+\begin{itemize}
+此專案是一個整合的語音和聊天機器人平台。後端使用 Flask 和 SocketIO 構建，用於即時通訊。它使用 VAPI、Retell 和 LiveKit 等工具處理語音命令，並透過 SocketIO 和 WebRTC 實現聊天功能。數據通過 NocoDB 和其他數據庫進行管理，該解決方案支援透過 iframe 嵌入，並與 WhatsApp 和 Facebook Messenger 等訊息平台整合。整個系統使用 Docker Compose 部署。
+\end{itemize}
+
+\cvsection{論文發表}
+% 傳統出版物
+\cvevent{基於神經網路的到達方向估計超解析度演算法}{國立中興大學}{2019 年}{}
+
+% 額外的 arXiv 出版物（精選範例）
+\cvevent{\href{https://arxiv.org/abs/2502.04116}{生成對抗網路：連接藝術與機器智能的橋樑}}{arXiv}{提交日期：2025 年 2 月 9 日}{}
+\cvevent{\href{https://arxiv.org/abs/2412.09656}{從噪聲到細微差別：深度生成影像模型的進展}}{arXiv}{提交日期：2024 年 12 月 11 日}{}
+\cvevent{\href{https://arxiv.org/abs/2412.08969}{深度學習模型安全：威脅與防禦}}{arXiv}{提交日期：2024 年 12 月 15 日}{}
+\cvevent{\href{https://arxiv.org/abs/2412.02187}{深度學習、機器學習：推進大數據分析和管理}}{arXiv}{提交日期：2024 年 12 月 3 日}{}
+\cvevent{\href{https://arxiv.org/abs/2412.00800}{可解釋 AI 綜合指南：從經典模型到大型語言模型}}{arXiv}{提交日期：2024 年 12 月 8 日}{}
+\cvevent{\href{https://arxiv.org/abs/2411.06284}{視覺語言任務中多模態大型語言模型的綜合調查與指南}}{arXiv}{提交日期：2024 年 12 月 8 日}{}
+\cvevent{\href{https://arxiv.org/abs/2411.05026}{深度學習和機器學習——自然語言處理：從理論到應用}}{arXiv}{提交日期：2024 年 12 月 17 日}{}
+
+
+
+\end{CJK*}
+\end{document}
